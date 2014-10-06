@@ -30,9 +30,14 @@ alias apachestop='sudo /opt/local/apache2/bin/apachectl stop'
 alias apacherestart='sudo /opt/local/apache2/bin/apachectl restart'
 
 # GIT STUFF
+alias g="git"
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
+
+# From git convenience
+alias gs='git status'
+alias glog='git log --graph --oneline --all --decorate'
 
 
 # View HTTP traffic
@@ -42,17 +47,6 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 
 # Trim new lines and copy to clipboard
 alias trimcopy="tr -d '\n' | pbcopy"
-
-
-# Shortcuts
-alias g="git"
-alias v="vim"
-
-
-
-# From git convenience
-alias gs='git status'
-alias glog='git log --graph --oneline --all --decorate'
 
 
 
