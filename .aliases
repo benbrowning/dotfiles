@@ -12,7 +12,6 @@ alias -- -="cd -"
 # 							   sudo easy_install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-
 # Tomcat stuff
 alias startup="/Applications/Developer/tomcat/bin/startup.sh"
 alias shutdown="/Applications/Developer/tomcat/bin/shutdown.sh"
@@ -23,6 +22,8 @@ alias tailtc="tail -f /Applications/Developer/tomcat/logs/*"
 alias run='./manage runserver'
 alias migrate='./manage syncdb --migrate'
 
+# Asset Bank stuff
+alias regencss='./WEB-INF/manager-config/dev-scripts/regen-main-css'
 
 # Apache stuff
 alias apachestart='sudo /opt/local/apache2/bin/apachectl start'
