@@ -20,3 +20,7 @@ fi
 # Your previous /Users/benbrowning/.bash_profile file was backed up as /Users/benbrowning/.bash_profile.macports-saved_2013-12-20_at_11:59:12
 ##
 
+# Add gradle to path
+export PATH="/Applications/Developer/gradle-2.7/bin:$PATH"
+
+eval "$(rbenv init -)"
