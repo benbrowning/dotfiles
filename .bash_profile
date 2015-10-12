@@ -20,6 +20,8 @@ fi
 # Your previous /Users/benbrowning/.bash_profile file was backed up as /Users/benbrowning/.bash_profile.macports-saved_2013-12-20_at_11:59:12
 ##
 
+export NVM_DIR="/Users/benbrowning/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # Add gradle to path
 export PATH="/Applications/Developer/gradle-2.7/bin:$PATH"
 
