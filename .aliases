@@ -13,8 +13,8 @@ alias -- -="cd -"
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Tomcat stuff
-alias startup="/Applications/Developer/tomcat/bin/startup.sh"
-alias shutdown="/Applications/Developer/tomcat/bin/shutdown.sh"
+alias startup="jenv exec /Applications/Developer/tomcat/bin/startup.sh"
+alias shutdown="jenv exec /Applications/Developer/tomcat/bin/shutdown.sh"
 alias tailtc="tail -f /Applications/Developer/tomcat/logs/*"
 
 

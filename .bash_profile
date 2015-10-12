@@ -24,3 +24,4 @@ fi
 export PATH="/Applications/Developer/gradle-2.7/bin:$PATH"
 
 eval "$(rbenv init -)"
+eval "$(jenv init -)"
