@@ -20,10 +20,10 @@ alias tailtc="tail -f /Applications/Developer/tomcat/logs/*"
 
 # Django stuff
 alias run='./manage runserver'
-alias migrate='./manage syncdb --migrate'
+alias migrate='./manage migrate'
 
 # Asset Bank stuff
-alias regencss='./WEB-INF/manager-config/dev-scripts/regen-main-css'
+alias regencss='./src/main/webapp/WEB-INF/manager-config/dev-scripts/regen-main-css'
 
 # Apache stuff
 alias apachestart='sudo /opt/local/apache2/bin/apachectl start'
@@ -37,9 +37,17 @@ alias undopush="git push -f origin HEAD^:master"
 alias gs='git status'
 alias glog='git log --graph --oneline --all --decorate'
 
+# Get latest tag in a branch
+alias lasttag='git describe --abbrev=0 --tags'
+
 # Grunt stuff
 alias gw='grunt watch'
 alias gd='grunt karma:debug'
+
+# NPM stuff
+alias nstory='npm run storybook'
+alias nstart='npm start'
+alias nlint='npm run lint'
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
@@ -48,7 +56,6 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 
 # Trim new lines and copy to clipboard
 alias trimcopy="tr -d '\n' | pbcopy"
-
 
 
 # File size
