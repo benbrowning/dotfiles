@@ -40,3 +40,8 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Add postgres comman line utilities to path
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# Add my ssh key to make ssh forwarding work
+ssh-add
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
