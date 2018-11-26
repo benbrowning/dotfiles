@@ -45,3 +45,20 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 ssh-add
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Find what server an asset bank is on
+# Example usage: ab trial17-8
+function ab(){
+     dig $1.assetbank-server.com | grep -m1 bright-server.net | rev | cut -f1 | rev | cut -d\. -f1
+}
+
+# SSH into an asset bank server
+function abgo(){
+     SERVER=`ab $1`
+     go $SERVER
+}
+
+# SSH into any server
+function go(){
+     ssh ben@$1.bright-server.net
+}
